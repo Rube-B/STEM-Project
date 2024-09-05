@@ -5,8 +5,11 @@ Two high school seniors on a mission to create the ultimate flight simulator exp
 Features
 
 🕹 Custom Hardware Joysticks: Designed and built from scratch to provide a realistic and immersive piloting experience.
+
 🎮 Multiplayer Dogfight Mode: Engage in intense air-to-air combat with friends, featuring dynamic physics, realistic flight controls, and tactical gameplay.
+
 🌍 Immersive Environments: Explore diverse landscapes and environments designed for aerial combat.
+
 💻 Unity Engine: Built with Unity, leveraging its powerful 3D rendering capabilities and physics engine.
 Goals
 
