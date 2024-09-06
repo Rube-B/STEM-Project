@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha2)) index = 1;
         else if (Input.GetKeyDown(KeyCode.Alpha3)) index = 2;
         else if (Input.GetKeyDown(KeyCode.Alpha4)) index = 3;
+        else if (Input.GetKeyDown(KeyCode.Alpha5)) index = 4;
 
         target = povs[index].position;
 
