@@ -60,7 +60,7 @@ public class PlaneController : MonoBehaviour
         rb.AddForce(transform.forward * maxThrust * throttle);
         rb.AddTorque(transform.up * yaw * responseModifier);
         rb.AddTorque(transform.right * pitch * responseModifier);
-        rb.AddTorque(transform.forward * roll * responseModifier);
+        rb.AddTorque(-transform.forward * roll * responseModifier);
     }
 
 }
