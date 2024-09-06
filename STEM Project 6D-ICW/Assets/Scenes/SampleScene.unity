@@ -323,12 +323,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d1d49df639a4b43bc4c5366e4deb93, type: 3}
+  m_Script: {fileID: 11500000, guid: ce7b282feaf034e47858b623f6556477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 727837724}
-  offset: {x: 0, y: 5, z: -10}
-  smoothSpeed: 0.125
+  povs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 100
 --- !u!1001 &1169404960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -531,7 +534,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
