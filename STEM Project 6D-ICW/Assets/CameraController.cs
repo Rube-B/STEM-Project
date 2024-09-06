@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour
         target = povs[index].position;
 
     }
-    private void Fixedupdate()
+    private void FixedUpdate()
     {
         transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * speed);
         transform.forward = povs[index].forward;
