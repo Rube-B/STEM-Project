@@ -1361,7 +1361,7 @@ WheelCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_ProvidesContacts: 0
 --- !u!135 &260799571
 SphereCollider:
@@ -2665,7 +2665,7 @@ WheelCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634142480}
   serializedVersion: 2
-  m_Center: {x: 0.0057, y: -0.0009, z: 0.1498}
+  m_Center: {x: 0.0055, y: -0.0009, z: 0.1498}
   m_Radius: 0.0013
   m_SuspensionSpring:
     spring: 50000
@@ -2673,7 +2673,7 @@ WheelCollider:
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
-  m_Mass: 300
+  m_Mass: 20
   m_WheelDampingRate: 0.0001
   m_ForwardFriction:
     m_ExtremumSlip: 0.2
@@ -2694,7 +2694,7 @@ WheelCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_ProvidesContacts: 0
 --- !u!23 &634142484
 MeshRenderer:
@@ -4721,7 +4721,7 @@ WheelCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_ProvidesContacts: 0
 --- !u!135 &1210134463
 SphereCollider:
@@ -5885,6 +5885,7 @@ GameObject:
   - component: {fileID: 1680675613}
   - component: {fileID: 1680675616}
   - component: {fileID: 1680675615}
+  - component: {fileID: 1680675618}
   - component: {fileID: 1680675617}
   m_Layer: 0
   m_Name: Model_Root
@@ -6003,6 +6004,23 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1680675618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680675612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf0cfd6d392c1049a911a3d1b9884f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axleInfos:
+  - leftWheel: {fileID: 634142483}
+    rightWheel: {fileID: 1210134462}
+    steering: 1
+  maxSteeringAngle: 5
 --- !u!1 &1686029589 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1945486636683133619, guid: 19b039eef105d78449397865d8e2a16e, type: 3}
