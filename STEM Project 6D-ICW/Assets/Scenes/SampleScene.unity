@@ -3523,7 +3523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throttleIncrement: 0.5
   maxThrust: 50000
-  responsivness: 120
+  responsivness: 250
   rolleffectivness: 90000
   lift: 500
   hud: {fileID: 581392249}
@@ -3559,7 +3559,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680675612}
   serializedVersion: 4
-  m_Mass: 37000
+  m_Mass: 80000
   m_Drag: 0.9
   m_AngularDrag: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}

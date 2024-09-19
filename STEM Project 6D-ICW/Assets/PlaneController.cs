@@ -73,15 +73,30 @@ public class PlaneController : MonoBehaviour
         // Apply additional roll torque for responsiveness
         rb.AddTorque(transform.right * roll * rolleffectivness);
 
-        // Calculate the bank angle
-        float bankAngle = Vector3.Dot(transform.right, Vector3.up);
+        // Calculate the bank angle accurately
+        float bankAngle = CalculateBankAngle();
+        Debug.Log("Bank Angle: " + bankAngle.ToString("F2") + " degrees");
+
+        // Convert bank angle to a range of 0 to 1 (for angles between 0 and 90 degrees)
+        float normalizedBank = Mathf.Clamp01(Mathf.Abs(bankAngle) / 90f);
 
         // Apply coordinated yaw torque based on bank angle
-        float turnForce = bankAngle * Mathf.Abs(roll) * rolleffectivness;
-        rb.AddTorque(transform.up * turnForce);
+        float turnForce = normalizedBank * Mathf.Sign(roll) * rolleffectivness;
+        rb.AddTorque(transform.up * turnForce * 250);
 
         // Apply lift force proportional to the velocity and lift coefficient
         rb.AddForce(Vector3.up * rb.velocity.magnitude * lift);
+    }
+
+    private float CalculateBankAngle()
+    {
+        // Calculate bank angle between the plane's right vector and the horizontal plane
+        Vector3 right = transform.right;
+        right.y = 0; // Project onto the horizontal plane
+        right.Normalize(); // Normalize to ensure a unit vector
+
+        float bankAngle = Vector3.SignedAngle(Vector3.right, right, transform.forward);
+        return bankAngle;
     }
 
     private void UpdateHUD()
