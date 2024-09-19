@@ -6,7 +6,7 @@ public class FollowCamera : MonoBehaviour
     public Vector3 offset = new Vector3(0, 5, -10); // Offset of the camera relative to the target
     public float smoothSpeed = 0.125f;  
 
-    void LateUpdate()
+    void Update()
     {
         // Desired position is the target's position plus the offset
         Vector3 desiredPosition = target.position + offset;

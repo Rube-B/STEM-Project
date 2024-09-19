@@ -1226,7 +1226,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 12, y: -60}
-  m_SizeDelta: {x: 200, y: 150}
+  m_SizeDelta: {x: 3000, y: 150}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &581392249
 MonoBehaviour:
@@ -2305,7 +2305,9 @@ MonoBehaviour:
   - {fileID: 1039332697}
   - {fileID: 1000028779}
   - {fileID: 289672588}
-  speed: 100000000
+  speed: 999999
+  offset: {x: 0, y: 2, z: -5}
+  smoothTime: 0.3
 --- !u!1 &1000028778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3521,7 +3523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   throttleIncrement: 0.5
   maxThrust: 50000
-  responsivness: 60
+  responsivness: 120
+  rolleffectivness: 90000
   lift: 500
   hud: {fileID: 581392249}
 --- !u!4 &1680675614
@@ -3534,7 +3537,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.44, y: -4, z: 1.98}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 137084548}
@@ -3557,7 +3560,7 @@ Rigidbody:
   m_GameObject: {fileID: 1680675612}
   serializedVersion: 4
   m_Mass: 37000
-  m_Drag: 1
+  m_Drag: 0.9
   m_AngularDrag: 1
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
