@@ -1,0 +1,95 @@
+/* Algemene stijlen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header en navigatie */
+.header {
+    background-color: #004080; /* Donkerblauwe achtergrond */
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff; /* Witte tekstkleur */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Gouden kleur bij hover */
+}
+
+/* Hoofdinhoud */
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* Witte achtergrond voor de content */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-title {
+    color: #004080; /* Donkerblauwe kleur voor de hoofdheading */
+    margin-bottom: 20px;
+}
+
+.home-subtitle {
+    color: #0073e6; /* Heldere blauwe kleur voor subtitels */
+    margin-top: 20px;
+}
+
+.home-description {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #004080; /* Donkerblauwe achtergrond */
+    color: #ffffff; /* Witte tekstkleur */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsieve stijlen */
+@media (max-width: 600px) {
+    .nav-list {
+        flex-direction: column; /* Stapelen van navigatie-items op kleine schermen */
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .main-content {
+        margin: 10px;
+        padding: 15px;
+    }
+}
